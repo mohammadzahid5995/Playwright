@@ -1,0 +1,148 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\ansar\\Desktop\\Playwight\\playwright.config.ts",
+    "rootDir": "C:/Users/ansar/Desktop/Playwight",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/ansar/Desktop/Playwight/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/ansar/Desktop/Playwight",
+        "testIgnore": [],
+        "testMatch": [
+          "/pomtest/register.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pomtest\\register.test.ts",
+      "file": "pomtest/register.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Register user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 12105,
+                  "error": {
+                    "message": "Error: toBeChecked can be only used with Locator object",
+                    "stack": "Error: toBeChecked can be only used with Locator object\n    at C:\\Users\\ansar\\Desktop\\Playwight\\pomtest\\register.test.ts:14:40",
+                    "location": {
+                      "file": "C:\\Users\\ansar\\Desktop\\Playwight\\pomtest\\register.test.ts",
+                      "column": 40,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39menterPassword(\u001b[32m\"zahid\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39menterConfirmedPassword(\u001b[32m\"zahid\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(register\u001b[33m.\u001b[39msubscribe())\u001b[33m.\u001b[39mtoBeChecked()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mtermsandcondition()\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mproceed()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\ansar\\Desktop\\Playwight\\pomtest\\register.test.ts",
+                        "column": 40,
+                        "line": 14
+                      },
+                      "message": "Error: toBeChecked can be only used with Locator object\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39menterPassword(\u001b[32m\"zahid\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39menterConfirmedPassword(\u001b[32m\"zahid\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m expect(register\u001b[33m.\u001b[39msubscribe())\u001b[33m.\u001b[39mtoBeChecked()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mtermsandcondition()\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m register\u001b[33m.\u001b[39mproceed()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\ansar\\Desktop\\Playwight\\pomtest\\register.test.ts:14:40\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-09T12:11:09.800Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\pomtest-register-Register-user\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\pomtest-register-Register-user\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\ansar\\Desktop\\Playwight\\pomtest\\register.test.ts",
+                    "column": 40,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e60faa81de4b2c9cf941-9d701594566f29a7ce82",
+          "file": "pomtest/register.test.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-09T12:11:09.055Z",
+    "duration": 13281.674,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
