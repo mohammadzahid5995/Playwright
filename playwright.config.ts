@@ -14,14 +14,6 @@ const config: PlaywrightTestConfig = {
     ["html", { open: "never" }]
   ],
   // Added multiple browser projects here
-  projects: [
-    {
-      name: 'chromium',
-      use: {
-        browserName: 'chromium',
-      },
-    }
-  ]
 };
 
 export default config;
