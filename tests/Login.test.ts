@@ -1,7 +1,7 @@
-import {chromium, test} from "@playwright/test";
+import { chromium, test } from "@playwright/test";
 
 
-test("Login test demo", async() => {
+test("Login test demo", async () => {
 
     const browser = await chromium.launch({
         headless: false
@@ -17,12 +17,12 @@ test("Login test demo", async() => {
     await page.fill("input[type='password']", "Pass123$")
     await page.click("input[value='Login']")
 
-    await page.waitForTimeout(5000)
+    // await page.waitForTimeout(5000)
 
     const newContext = await browser.newContext()
     const page1 = await newContext.newPage();
     await page1.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account")
 
-    await page1.waitForTimeout(5000)
+    // await page1.waitForTimeout(5000)
 })
 
