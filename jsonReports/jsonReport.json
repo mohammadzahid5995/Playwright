@@ -48,31 +48,31 @@
         "testDir": "C:/Users/ansar/Desktop/Playwight",
         "testIgnore": [],
         "testMatch": [
-          "tests/Login.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 60000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.46.1",
+    "version": "1.47.2",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\Login.test.ts",
-      "file": "tests/Login.test.ts",
+      "title": "tests\\Practise project\\speedtest.test.ts",
+      "file": "tests/Practise project/speedtest.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
-          "ok": true,
+          "title": "Internet speed test",
+          "ok": false,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -80,32 +80,48 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 15178,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 61314,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\ansar\\Desktop\\Playwight\\tests\\Practise project\\speedtest.test.ts",
+                        "column": 16,
+                        "line": 7
+                      },
+                      "message": "Error: page.waitForTimeout: Test timeout of 60000ms exceeded.\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.speedtest.net\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"span.start-text\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m60000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"(//div[@class='result-data u-align-left']//span)[1]\"\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m90000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m speedText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='result-data u-align-left']//span)[1]\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m speed \u001b[33m=\u001b[39m parseFloat(speedText)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\ansar\\Desktop\\Playwight\\tests\\Practise project\\speedtest.test.ts:7:16\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T10:07:55.854Z",
+                  "startTime": "2024-09-26T13:00:21.487Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Login-Login-test-demo-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Practise project-speedtest-Internet-speed-test-chromium\\test-failed-1.png"
                     },
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Login-Login-test-demo-chromium\\test-finished-2.png"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Practise project-speedtest-Internet-speed-test-chromium\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "dcb31983a82c67060828-9b25ee726b26b0d62165",
-          "file": "tests/Login.test.ts",
+          "id": "3fd8765b9218e8df9444-a7b586e69f1763de2f9d",
+          "file": "tests/Practise project/speedtest.test.ts",
           "line": 4,
           "column": 5
         }
@@ -114,11 +130,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-24T10:07:55.200Z",
-    "duration": 16146.358,
-    "expected": 1,
+    "startTime": "2024-09-26T13:00:20.331Z",
+    "duration": 63377.939,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

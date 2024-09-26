@@ -7,6 +7,7 @@ const config: PlaywrightTestConfig = {
     screenshot: "on",
     video: "on"
   },
+  timeout: 60000,
   retries: 0,
   reporter: [
     ["dot"],
@@ -21,18 +22,18 @@ const config: PlaywrightTestConfig = {
         browserName: 'chromium',
       },
     },
-    {
-      name: 'firefox',
-      use: {
-        browserName: 'firefox',
-      },
-    },
-    {
-      name: 'webkit',
-      use: {
-        browserName: 'webkit',
-      },
-    }
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     browserName: 'firefox',
+    //   },
+    // },
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     browserName: 'webkit',
+    //   },
+    // }
   ]
 };
 
