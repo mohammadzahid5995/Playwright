@@ -61,14 +61,14 @@
   },
   "suites": [
     {
-      "title": "tests\\Practise project\\speedtest.test.ts",
-      "file": "tests/Practise project/speedtest.test.ts",
+      "title": "tests\\LinkedIn\\loginLogout.test.ts",
+      "file": "tests/LinkedIn/loginLogout.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Internet speed test",
-          "ok": false,
+          "title": "LoginLogout",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -80,49 +80,33 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 61314,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\ansar\\Desktop\\Playwight\\tests\\Practise project\\speedtest.test.ts",
-                        "column": 16,
-                        "line": 7
-                      },
-                      "message": "Error: page.waitForTimeout: Test timeout of 60000ms exceeded.\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.speedtest.net\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"span.start-text\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m60000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"(//div[@class='result-data u-align-left']//span)[1]\"\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m90000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m speedText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"(//div[@class='result-data u-align-left']//span)[1]\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m speed \u001b[33m=\u001b[39m parseFloat(speedText)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\ansar\\Desktop\\Playwight\\tests\\Practise project\\speedtest.test.ts:7:16\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 12889,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-26T13:00:21.487Z",
+                  "startTime": "2024-09-26T15:41:52.554Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Practise project-speedtest-Internet-speed-test-chromium\\test-failed-1.png"
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-LinkedIn-loginLogout-LoginLogout-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-Practise project-speedtest-Internet-speed-test-chromium\\video.webm"
+                      "path": "C:\\Users\\ansar\\Desktop\\Playwight\\test-results\\tests-LinkedIn-loginLogout-LoginLogout-chromium\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "3fd8765b9218e8df9444-a7b586e69f1763de2f9d",
-          "file": "tests/Practise project/speedtest.test.ts",
-          "line": 4,
+          "id": "a3757d9fcb3d705615c8-c024e93bd96b55038cc2",
+          "file": "tests/LinkedIn/loginLogout.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
@@ -130,11 +114,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-26T13:00:20.331Z",
-    "duration": 63377.939,
-    "expected": 0,
+    "startTime": "2024-09-26T15:41:51.933Z",
+    "duration": 14048.411,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
